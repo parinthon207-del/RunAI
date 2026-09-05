@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html lang="th">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>RunAI | บันทึกการวิ่ง</title><link rel="stylesheet" href="css/style.css"></head>
+<body>
+<header class="navbar"><div class="container nav-content"><a class="logo" href="index.html">run<span>ai</span></a><nav><a href="index.html">หน้าแรก</a><a href="profile.html">ข้อมูลผู้ใช้</a><a href="goal.html">เป้าหมาย</a><a class="active" href="run.html">บันทึกการวิ่ง</a><a href="#" onclick="logout();return false;">ออกจากระบบ</a><a href="history.html">ประวัติ</a></nav></div></header>
+<main class="container page"><div class="page-heading"><span class="tag">US-03</span><h1>บันทึกการวิ่ง</h1><p>เพิ่มผลการวิ่งของคุณลงในประวัติ</p></div>
+<section class="form-card wide"><form id="runForm"><div class="two-col"><label>ระยะทาง (กม.)<input id="runDistance" type="number" step="0.01" min="0" required></label><label>เวลา (นาที)<input id="runMinutes" type="number" min="0" required></label><label>วินาที<input id="runSeconds" type="number" min="0" max="59" value="0" required></label><label>วันที่วิ่ง<input id="runDate" type="date" required></label></div><label>หมายเหตุ (ถ้ามี)<input id="runNote" maxlength="500" placeholder="เช่น วิ่งตอนเช้า"></label><button class="btn btn-primary" type="submit">บันทึกการวิ่ง</button><p id="runMessage" class="message"></p></form></section></main>
+<script src="js/api.js"></script>
+<script src="js/run.js"></script>
+</body></html>

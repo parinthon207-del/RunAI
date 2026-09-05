@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html lang="th">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>RunAI | ประวัติ</title><link rel="stylesheet" href="css/style.css"></head>
+<body>
+<header class="navbar"><div class="container nav-content"><a class="logo" href="index.html">run<span>ai</span></a><nav><a href="index.html">หน้าแรก</a><a href="profile.html">ข้อมูลผู้ใช้</a><a href="goal.html">เป้าหมาย</a><a href="run.html">บันทึกการวิ่ง</a><a class="active" href="history.html">ประวัติ</a><a href="#" onclick="logout();return false;">ออกจากระบบ</a></nav></div></header>
+<main class="container page"><div class="page-heading"><span class="tag">US-04</span><h1>ประวัติและพัฒนาการ</h1><p>ดูข้อมูลการวิ่งย้อนหลังของคุณ</p></div>
+<div class="metric-grid history-metrics"><div class="metric"><span>วิ่งทั้งหมด</span><strong id="totalRuns">0</strong><small>ครั้ง</small></div><div class="metric"><span>ระยะทางรวม</span><strong id="totalDistance">0.0</strong><small>กม.</small></div><div class="metric"><span>เวลาออกกำลังรวม</span><strong id="totalTime">0</strong><small>นาที</small></div><div class="metric"><span>ระยะทางเฉลี่ย</span><strong id="averageDistance">0.0</strong><small>กม./ครั้ง</small></div></div>
+<section class="list-card"><div class="card-header"><h2>รายการวิ่งล่าสุด</h2><button class="btn btn-secondary small" onclick="loadHistory()">รีเฟรช</button></div><div id="historyList" class="run-list"><p class="muted">กำลังโหลด...</p></div></section></main>
+<script src="js/api.js"></script>
+<script src="js/history.js"></script>
+</body></html>

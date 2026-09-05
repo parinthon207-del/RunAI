@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html lang="th">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>RunAI | สมัครสมาชิก</title><link rel="stylesheet" href="css/style.css"></head>
+<body>
+<header class="navbar"><div class="container nav-content"><a class="logo" href="index.html">run<span>ai</span></a><nav><a href="index.html">หน้าแรก</a><a href="goal.html">เป้าหมาย</a><a href="run.html">บันทึกการวิ่ง</a><a href="history.html">ประวัติ</a><a href="login.html">เข้าสู่ระบบ</a></nav></div></header>
+<main class="form-page"><section class="form-card"><span class="tag">CREATE ACCOUNT</span><h1>สมัครสมาชิก</h1><p class="muted">สร้างบัญชีเพื่อเริ่มบันทึกข้อมูลการวิ่ง</p>
+<form id="registerForm"><label>ชื่อ<input id="registerName" required placeholder="ชื่อที่แสดง"></label><label>อีเมล<input id="registerEmail" type="email" required placeholder="you@example.com"></label><label>รหัสผ่าน<input id="registerPassword" type="password" minlength="6" required placeholder="อย่างน้อย 6 ตัวอักษร"></label><label>ยืนยันรหัสผ่าน<input id="registerConfirm" type="password" minlength="6" required placeholder="พิมพ์อีกครั้ง"></label><button class="btn btn-primary full" type="submit">สร้างบัญชี</button><p id="registerMessage" class="message"></p></form>
+<p class="form-footer">มีบัญชีแล้ว? <a href="login.html">เข้าสู่ระบบ</a></p></section></main>
+<script src="js/api.js"></script>
+<script src="js/auth.js"></script>
+</body></html>

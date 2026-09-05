@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html lang="th">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>RunAI | เป้าหมาย</title><link rel="stylesheet" href="css/style.css"></head>
+<body>
+<header class="navbar"><div class="container nav-content"><a class="logo" href="index.html">run<span>ai</span></a><nav><a href="index.html">หน้าแรก</a><a href="profile.html">ข้อมูลผู้ใช้</a><a class="active" href="goal.html">เป้าหมาย</a><a href="#" onclick="logout();return false;">ออกจากระบบ</a><a href="run.html">บันทึกการวิ่ง</a><a href="history.html">ประวัติ</a></nav></div></header>
+<main class="container page"><div class="page-heading"><span class="tag">US-02</span><h1>เป้าหมายการวิ่ง</h1><p>กำหนดเป้าหมายของคุณสำหรับ Sprint 1</p></div>
+<div class="two-panel"><section class="form-card"><form id="goalForm"><label>เป้าหมาย<input id="goalType" required placeholder="เช่น วิ่งเพื่อสุขภาพ"></label><label>ระยะทางเป้าหมาย (กม.)<input id="goalDistance" type="number" step="0.01" min="0"></label><label>วันที่เป้าหมาย<input id="goalDate" type="date"></label><button class="btn btn-primary full" type="submit">บันทึกเป้าหมาย</button><p id="goalMessage" class="message"></p></form></section>
+<section class="list-card"><div class="card-header"><h2>เป้าหมายของฉัน</h2><button class="btn btn-secondary small" onclick="loadGoals()">รีเฟรช</button></div><div id="goalList" class="simple-list"><p class="muted">กำลังโหลด...</p></div></section></div></main>
+<script src="js/api.js"></script>
+<script src="js/goal.js"></script>
+</body></html>

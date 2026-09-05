@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html lang="th">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>RunAI | เข้าสู่ระบบ</title><link rel="stylesheet" href="css/style.css"></head>
+<body>
+<header class="navbar"><div class="container nav-content"><a class="logo" href="index.html">run<span>ai</span></a><nav><a href="index.html">หน้าแรก</a><a href="goal.html">เป้าหมาย</a><a href="run.html">บันทึกการวิ่ง</a><a href="history.html">ประวัติ</a><a class="active" href="login.html">เข้าสู่ระบบ</a><a class="btn btn-primary small" href="register.html">สมัครสมาชิก</a></nav></div></header>
+<main class="form-page"><section class="form-card"><span class="tag">WELCOME BACK</span><h1>เข้าสู่ระบบ</h1><p class="muted">บัญชีจะตรวจสอบกับ MySQL ผ่าน Backend จริง</p>
+<form id="loginForm"><label>อีเมล<input id="loginEmail" type="email" required placeholder="you@example.com"></label><label>รหัสผ่าน<input id="loginPassword" type="password" required placeholder="อย่างน้อย 6 ตัวอักษร"></label><button class="btn btn-primary full" type="submit">เข้าสู่ระบบ</button><p id="loginMessage" class="message"></p></form>
+<p class="form-footer">ยังไม่มีบัญชี? <a href="register.html">สมัครสมาชิก</a></p></section></main>
+<script src="js/api.js"></script>
+<script src="js/auth.js"></script>
+</body></html>

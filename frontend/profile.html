@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html lang="th">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>RunAI | ข้อมูลผู้ใช้</title><link rel="stylesheet" href="css/style.css"></head>
+<body>
+<header class="navbar"><div class="container nav-content"><a class="logo" href="index.html">run<span>ai</span></a><nav><a href="index.html">หน้าแรก</a><a class="active" href="profile.html">ข้อมูลผู้ใช้</a><a href="#" onclick="logout();return false;">ออกจากระบบ</a><a href="goal.html">เป้าหมาย</a><a href="run.html">บันทึกการวิ่ง</a><a href="history.html">ประวัติ</a></nav></div></header>
+<main class="container page"><div class="page-heading"><span class="tag">US-01</span><h1>ข้อมูลผู้ใช้งาน</h1><p>กรอกข้อมูลพื้นฐานที่จำเป็นสำหรับระบบ</p></div>
+<section class="form-card wide"><form id="profileForm"><div class="two-col"><label>ชื่อ<input id="profileName" required></label><label>อีเมล<input id="profileEmail" disabled></label><label>อายุ<input id="profileAge" type="number" min="1" max="120"></label><label>ส่วนสูง (ซม.)<input id="profileHeight" type="number" min="50"></label><label>น้ำหนัก (กก.)<input id="profileWeight" type="number" min="10"></label></div><button class="btn btn-primary" type="submit">บันทึกข้อมูล</button><p id="profileMessage" class="message"></p></form></section></main>
+<script src="js/api.js"></script>
+<script src="js/profile.js"></script>
+</body></html>

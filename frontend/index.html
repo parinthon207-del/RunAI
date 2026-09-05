@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RunAI | หน้าแรก</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="container nav-content">
+      <a class="logo" href="index.html">run<span>ai</span></a>
+      <nav>
+        <a class="active" href="index.html">หน้าแรก</a>
+        <a href="goal.html">เป้าหมาย</a>
+        <a href="run.html">บันทึกการวิ่ง</a>
+        <a href="history.html">ประวัติ</a>
+        <a href="login.html">เข้าสู่ระบบ</a>
+        <a class="btn btn-primary small" href="register.html">สมัครสมาชิก</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero container">
+      <div>
+        <span class="tag">SPRINT 1 • RUNAI</span>
+        <h1>วิ่งง่าย ๆ<br><span>ติดตามได้ทุกวัน</span></h1>
+        <p>RunAI ช่วยเก็บข้อมูลผู้ใช้งาน เป้าหมาย และประวัติการวิ่งไว้ในที่เดียว เพื่อให้คุณเห็นพัฒนาการของตัวเองได้ง่ายขึ้น</p>
+        <div class="button-row">
+          <a class="btn btn-primary" href="register.html">เริ่มต้นใช้งาน</a>
+          <a class="btn btn-secondary" href="history.html">ดูประวัติการวิ่ง</a>
+        </div>
+      </div>
+
+      <div class="dashboard-card">
+        <div class="card-header">
+          <div>
+            <small>ภาพรวมการวิ่ง</small>
+            <h2>พัฒนาการของคุณ</h2>
+          </div>
+          <span class="status">พร้อมวิ่ง</span>
+        </div>
+        <div class="metric-grid">
+          <div class="metric"><span>วิ่งทั้งหมด</span><strong id="homeRuns">0</strong><small>ครั้ง</small></div>
+          <div class="metric"><span>ระยะทางรวม</span><strong id="homeDistance">0.0</strong><small>กม.</small></div>
+          <div class="metric"><span>ระยะทางเฉลี่ย</span><strong id="homeAverage">0.0</strong><small>กม./ครั้ง</small></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container section">
+      <div class="section-title">
+        <span class="tag">4 FEATURES</span>
+        <h2>ฟีเจอร์หลักของ Sprint 1</h2>
+      </div>
+      <div class="feature-grid">
+        <a class="feature-card" href="register.html"><div class="feature-icon">01</div><h3>บัญชีและข้อมูลผู้ใช้งาน</h3><p>สมัครสมาชิก เข้าสู่ระบบ และจัดการข้อมูลพื้นฐาน</p></a>
+        <a class="feature-card" href="goal.html"><div class="feature-icon">02</div><h3>เป้าหมายการวิ่ง</h3><p>กำหนดเป้าหมายที่ต้องการติดตาม</p></a>
+        <a class="feature-card" href="run.html"><div class="feature-icon">03</div><h3>บันทึกประวัติการวิ่ง</h3><p>เก็บระยะทาง เวลา Pace และวันที่วิ่ง</p></a>
+        <a class="feature-card" href="history.html"><div class="feature-icon">04</div><h3>ประวัติและพัฒนาการ</h3><p>ดูสรุปและรายการวิ่งที่ผ่านมา</p></a>
+      </div>
+    </section>
+  </main>
+
+  <footer><div class="container">© 2026 RunAI • Sprint 1</div></footer>
+  <script src="js/api.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
